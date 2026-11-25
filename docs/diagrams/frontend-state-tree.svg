@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img"><title>Frontend state ownership</title><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6Z" fill="#668195"/></marker></defs><rect width="100%" height="100%" fill="#f2f6fa"/><path d="M 587.5 140 V 165 H 587.5 V 190" fill="none" stroke="#668195" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 232.5 140 V 165 H 230 V 190" fill="none" stroke="#668195" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 365 52 V 73.5 H 587.5 V 95" fill="none" stroke="#668195" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 365 52 V 73.5 H 232.5 V 95" fill="none" stroke="#668195" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="250" y="12" width="230" height="40" rx="6" fill="#183553"/>
+<text x="262" y="34" fill="white" font-family="Arial,sans-serif" font-size="14">Redux Toolkit store</text>
+<rect x="120" y="95" width="225" height="45" rx="6" fill="#455474"/>
+<text x="132" y="117" fill="white" font-family="Arial,sans-serif" font-size="14">Shared interaction state</text>
+<rect x="475" y="95" width="225" height="45" rx="6" fill="#116859"/>
+<text x="487" y="117" fill="white" font-family="Arial,sans-serif" font-size="14">apiSlice · RTK Query</text>
+<rect x="40" y="190" width="380" height="126" rx="6" fill="#455474"/>
+<text x="52" y="212" fill="white" font-family="Arial,sans-serif" font-size="14">authSlice · session and access JWT</text>
+<text x="52" y="231" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceSlice · active tenant</text>
+<text x="52" y="250" fill="white" font-family="Arial,sans-serif" font-size="14">boardSlice · filters and drag state</text>
+<text x="52" y="269" fill="white" font-family="Arial,sans-serif" font-size="14">uiSlice · dialogs and theme</text>
+<text x="52" y="288" fill="white" font-family="Arial,sans-serif" font-size="14">notificationSlice · transient toasts</text>
+<rect x="475" y="190" width="225" height="94" rx="6" fill="#116859"/>
+<text x="487" y="212" fill="white" font-family="Arial,sans-serif" font-size="14">Workspace-scoped cache</text>
+<text x="487" y="231" fill="white" font-family="Arial,sans-serif" font-size="14">Projects, tasks and sprints</text>
+<text x="487" y="250" fill="white" font-family="Arial,sans-serif" font-size="14">Members and comments</text>
+<text x="487" y="269" fill="white" font-family="Arial,sans-serif" font-size="14">Reports and notifications</text></svg>

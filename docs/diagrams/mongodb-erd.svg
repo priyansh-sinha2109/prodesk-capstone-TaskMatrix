@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1005 830" role="img"><title>Collection reference map</title><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6Z" fill="#668195"/></marker></defs><rect width="100%" height="100%" fill="#f2f6fa"/><rect x="15" y="10" width="975" height="51" rx="6" fill="#183553"/>
+<text x="27" y="32" fill="white" font-family="Arial,sans-serif" font-size="14">MongoDB reference map · each row is a child collection</text>
+<text x="27" y="51" fill="white" font-family="Arial,sans-serif" font-size="14">Each reference has one parent (optional = zero or one). Each parent can have many child records.</text>
+<rect x="15" y="75" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="97" fill="white" font-family="Arial,sans-serif" font-size="14">users</text>
+<text x="27" y="116" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Account identity</text>
+<rect x="302" y="75" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="97" fill="white" font-family="Arial,sans-serif" font-size="14">Global identity · email (unique)</text>
+<text x="314" y="116" fill="white" font-family="Arial,sans-serif" font-size="14">passwordHash · displayName</text>
+<rect x="15" y="143" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="165" fill="white" font-family="Arial,sans-serif" font-size="14">workspaces</text>
+<text x="27" y="184" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Tenant boundary</text>
+<rect x="302" y="143" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="165" fill="white" font-family="Arial,sans-serif" font-size="14">createdBy → users</text>
+<text x="314" y="184" fill="white" font-family="Arial,sans-serif" font-size="14">name · createdAt / updatedAt</text>
+<rect x="15" y="211" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="233" fill="white" font-family="Arial,sans-serif" font-size="14">memberships</text>
+<text x="27" y="252" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Workspace access</text>
+<rect x="302" y="211" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="233" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces   |   userId → users</text>
+<text x="314" y="252" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId · createdAt / updatedAt</text>
+<rect x="15" y="279" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="301" fill="white" font-family="Arial,sans-serif" font-size="14">invitations</text>
+<text x="27" y="320" fill="white" font-family="Arial,sans-serif" font-size="14">_id · One-time admission</text>
+<rect x="302" y="279" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="301" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces</text>
+<text x="314" y="320" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId · createdAt / updatedAt</text>
+<rect x="15" y="347" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="369" fill="white" font-family="Arial,sans-serif" font-size="14">projects</text>
+<text x="27" y="388" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Work container</text>
+<rect x="302" y="347" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="369" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces</text>
+<text x="314" y="388" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId · createdAt / updatedAt</text>
+<rect x="15" y="415" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="437" fill="white" font-family="Arial,sans-serif" font-size="14">tasks</text>
+<text x="27" y="456" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Board and backlog item</text>
+<rect x="302" y="415" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="437" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces   |   projectId → projects</text>
+<text x="314" y="456" fill="white" font-family="Arial,sans-serif" font-size="14">sprintId → sprints (optional)   |   assigneeId → users (optional)</text>
+<rect x="15" y="483" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="505" fill="white" font-family="Arial,sans-serif" font-size="14">sprints</text>
+<text x="27" y="524" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Planning interval</text>
+<rect x="302" y="483" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="505" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces   |   projectId → projects</text>
+<text x="314" y="524" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId · createdAt / updatedAt</text>
+<rect x="15" y="551" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="573" fill="white" font-family="Arial,sans-serif" font-size="14">comments</text>
+<text x="27" y="592" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Task discussion</text>
+<rect x="302" y="551" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="573" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces   |   projectId → projects</text>
+<text x="314" y="592" fill="white" font-family="Arial,sans-serif" font-size="14">taskId → tasks   |   authorId → users</text>
+<rect x="15" y="619" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="641" fill="white" font-family="Arial,sans-serif" font-size="14">activity_logs</text>
+<text x="27" y="660" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Change history</text>
+<rect x="302" y="619" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="641" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces   |   projectId → projects</text>
+<text x="314" y="660" fill="white" font-family="Arial,sans-serif" font-size="14">actorId → users   |   entityId → target determined by action</text>
+<rect x="15" y="687" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="709" fill="white" font-family="Arial,sans-serif" font-size="14">notifications</text>
+<text x="27" y="728" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Assignment inbox</text>
+<rect x="302" y="687" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="709" fill="white" font-family="Arial,sans-serif" font-size="14">workspaceId → workspaces   |   userId → users</text>
+<text x="314" y="728" fill="white" font-family="Arial,sans-serif" font-size="14">taskId → tasks</text>
+<rect x="15" y="755" width="275" height="58" rx="6" fill="#183553"/>
+<text x="27" y="777" fill="white" font-family="Arial,sans-serif" font-size="14">refresh_sessions</text>
+<text x="27" y="796" fill="white" font-family="Arial,sans-serif" font-size="14">_id · Rotating login credential</text>
+<rect x="302" y="755" width="688" height="58" rx="6" fill="#116859"/>
+<text x="314" y="777" fill="white" font-family="Arial,sans-serif" font-size="14">userId → users</text>
+<text x="314" y="796" fill="white" font-family="Arial,sans-serif" font-size="14">userId · familyId / expiresAt</text></svg>
