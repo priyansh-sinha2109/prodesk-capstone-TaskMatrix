@@ -2,7 +2,7 @@
 
 [TaskMatrix interactive prototype · Figma Make V2](https://www.figma.com/make/N8iFs7N6oWDtJYdBBl5mgf/Agile-Project-Management?t=idRCiG4NRHRbJ1Pp-1)
 
-Version 2 uses simulated authentication and workspace data to demonstrate the planning and delivery workflow. The project owner inspected the prototype source and confirmed the views below. Signed-out access to the shared link requires manual confirmation.
+Version 2 uses simulated authentication and workspace data to demonstrate the planning and delivery workflow. The project owner inspected the prototype source and confirmed the views below. The project owner verified that the shared link opens without signing in.
 
 ## Design views and implementation mapping
 

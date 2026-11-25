@@ -4,7 +4,7 @@ TaskMatrix is a proposed agile project management platform for small engineering
 
 **Current phase:** Planning and Architecture
 
-**Designated track:** Full Stack Development (MERN), subject to mentor confirmation
+**Designated track:** Full Stack Development (MERN)
 
 ## Table of contents
 
@@ -125,14 +125,14 @@ The interactive prototype uses simulated authentication and workspace data. The 
 
 Week 1 establishes contracts and design. Week 2 delivers identity, workspaces and projects. Week 3 connects tasks, board, backlog and sprints. Week 4 gates deployment on access-control tests and end-to-end journeys. Analytics and enhancements depend on remaining capacity. [Roadmap and release gates](docs/development-roadmap.md) · [Security and testing](docs/security-and-testing.md) · [Decision records](docs/adr/)
 
-Scope assumes a four-week team capstone and one active sprint per project. A late track change requires revisiting stack decisions. Reordering contention is handled by version checks and retries. Cross-site cookie restrictions require a same-site deployment test before release. Advanced integrations, AI assistants, billing and microservices are outside initial scope.
+Scope assumes a four-week team capstone and one active sprint per project. Reordering contention is handled by version checks and retries. Cross-site cookie restrictions require a same-site deployment test before release. Advanced integrations, AI assistants, billing and microservices are outside initial scope.
 
 ## Sprint submission checklist
 
 | Submission priority | Deliverable | Status |
 | --- | --- | --- |
 | P0 | Public repository and primary PRD | Complete. The primary PRD is published on GitHub. |
-| P1 | Public Figma design | V2 delivered and linked. Signed-out viewing requires manual confirmation. |
+| P1 | Public Figma design | Complete. The project owner verified public, signed-out access to Figma Make V2. |
 | P2 | Database, system and frontend state architecture | Complete. Three editable Draw.io files and their verified SVG exports are included. |
 
 Submission priorities measure planning artifacts. Product priorities above determine implementation order.
