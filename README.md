@@ -12,7 +12,7 @@ TaskMatrix is a proposed agile project management platform for small engineering
 - [Core features](#core-features) and [prioritized feature matrix](#prioritized-feature-matrix)
 - [Workspace permissions](#workspace-permissions) and [core journeys](#core-journeys)
 - [Technology stack](#technology-stack) and [architecture diagrams](#architecture-diagrams)
-- [API and experience design](#api-and-experience-design)
+- [API contract](#api-contract) and [UI/UX design](#uiux-design)
 - [Delivery plan](#delivery-plan) and [sprint submission checklist](#sprint-submission-checklist)
 
 ## Product objectives
@@ -109,13 +109,17 @@ One Owner per workspace in the capstone. Ownership is fixed. Admins cannot chang
 
 [Frontend architecture](docs/frontend-architecture.md) · [Editable state tree](docs/diagrams/frontend-state-tree.drawio)
 
-## API and experience design
+## API contract
 
 The mock REST API uses `/api/v1`. Authentication establishes a session, workspace routes establish membership context, and nested project routes scope tasks and sprints. Board writes carry a version so two editors cannot silently overwrite a move. [Endpoint examples](docs/api-specification.md) · [OpenAPI contract](docs/openapi.yaml)
 
-Figma Design: Pending — public design link to be provided by the project owner.
+## UI/UX design
 
-[Eight-screen design brief](docs/ui-ux.md) · [Detailed product rules](docs/product-requirements.md)
+[TaskMatrix interactive prototype · Figma Make V2](https://www.figma.com/make/N8iFs7N6oWDtJYdBBl5mgf/Agile-Project-Management?t=idRCiG4NRHRbJ1Pp-1)
+
+The interactive prototype uses simulated authentication and workspace data. The owner’s source review confirmed ten design views. Login and registration lead into the main dashboard and project management. A project brings together the Kanban board, sprint planning and backlog, task details, and analytics dashboard. Team management and settings cover workspace administration. The design system documents shared interface patterns.
+
+[Design views and planned routes](docs/ui-ux.md) · [Detailed product rules](docs/product-requirements.md)
 
 ## Delivery plan
 
@@ -127,8 +131,8 @@ Scope assumes a four-week team capstone and one active sprint per project. A lat
 
 | Submission priority | Deliverable | Status |
 | --- | --- | --- |
-| P0 | Public repository and primary PRD | Public repository confirmed. PRD prepared locally; publication pending. |
-| P1 | Public Figma design | Pending owner design and public link. |
-| P2 | Database, system and frontend state architecture | Editable diagrams and static exports included. |
+| P0 | Public repository and primary PRD | Complete. The primary PRD is published on GitHub. |
+| P1 | Public Figma design | V2 delivered and linked. Signed-out viewing requires manual confirmation. |
+| P2 | Database, system and frontend state architecture | Complete. Three editable Draw.io files and their verified SVG exports are included. |
 
 Submission priorities measure planning artifacts. Product priorities above determine implementation order.
